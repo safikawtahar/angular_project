@@ -1,0 +1,35 @@
+<div class="modal-header">
+    <h4 class="modal-title">Modifier le produit</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss()">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<div class="modal-body">
+    <form (ngSubmit)="saveData()" class="custom-form">
+        <div class="form-group">
+            <label for="Nom_Produit" class="custom-label">Nom du Produit</label>
+            <input type="text" name="Nom_Produit" class="form-control custom-input" [(ngModel)]="product.Nom_Produit">
+        </div>
+        <div class="form-group">
+            <label for="Prix_Produit" class="custom-label">Prix du Produit</label>
+            <input type="number" name="Prix_Produit" class="form-control custom-input" [(ngModel)]="product.Prix_Produit">
+        </div>
+        <div class="form-group">
+            <label for="Description" class="custom-label">Description</label>
+            <textarea name="Description" class="form-control custom-input" [(ngModel)]="product.Description"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="Quantite_stocke" class="custom-label">Quantité en stock</label>
+            <input type="number" name="Quantite_stocke" class="form-control custom-input" [(ngModel)]="product.Quantite_stocke">
+        </div>
+        <div class="form-group">
+            <label for="Image_Produit" class="custom-label">Image du Produit</label>
+            <input type="text" name="Image_Produit" class="form-control custom-input" [(ngModel)]="product.Image_Produit">
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-primary" (click)="saveData()">Save</button>
+            <button type="button" class="btn btn-secondary" (click)="modal.dismiss()">Close</button>
+          </div>
+          
+    </form>
+</div>
