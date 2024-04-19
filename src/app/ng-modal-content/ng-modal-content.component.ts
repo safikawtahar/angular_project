@@ -1,17 +1,20 @@
 import { Component, Input } from '@angular/core';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 import { DataService } from '../service/data.service'; // Assurez-vous que le chemin est correct
+import {  OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-ng-modal-content',
   templateUrl: './ng-modal-content.component.html',
   styleUrls: ['./ng-modal-content.component.css']
 })
-export class NgModalContentComponent {
+export class NgModalContentComponent implements OnInit{
+  showForm: boolean = false; // Déclaration de showForm
+
   @Input() product: any;
 
  constructor(public modal: NgbActiveModal,private dataService: DataService) {}
-
+ ngOnInit(): void {}
  
  saveData() {
   if (this.product && this.product.id) {

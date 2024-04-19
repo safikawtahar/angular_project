@@ -1,0 +1,139 @@
+.imag{
+    width: 250px;
+    height: 250px;
+    display: block;
+    }
+    .ligne1 .cadre {
+      margin-right: 1px; /* Réduire l'espacement entre les images horizontalement */
+    }
+    .images {
+      margin-bottom: 5px; /* Réduire l'espacement entre les lignes d'images verticalement */
+      width: 47%;
+    }
+    
+    .cadre{
+        border: 1px solid #676464; /* Couleur et épaisseur de la bordure */
+        max-width: 300px; /* Largeur maximale de chaque image */
+        margin: 30px; /* Espacement autour de chaque cadre */
+        height: 350px;
+        padding: 10px; /* Réduire l'espace à l'intérieur du cadre */
+  
+    }
+    .ligne{
+        color: #676464;
+        margin-top: -10px;
+  
+    }
+    .desc{
+        margin-top: 60px;
+    }
+    .ligne1{
+        justify-content: center; /* Centre horizontalement les enfants */
+        text-align: center; /* Centre le texte horizontalement */
+  
+        justify-content: center;
+        display: inline-flex;
+  
+    }
+    .cat, .contenue {
+   
+        vertical-align: top; /* Alignement vertical en haut */
+        
+    }
+  .contenue{
+    margin-top: -750px;
+    margin-left: -32%;
+    display: flex; /* Affichage en ligne */
+    flex-wrap: wrap; /* Permettre le retour à la ligne si nécessaire */
+    justify-content: center; /* Centrer les éléments horizontalement */
+  }
+  h2{
+    margin-top: -60px;
+  }
+  h3{
+    margin-top: -20px;
+  }
+  h4{
+    margin-top: -20px;
+  }
+  
+  
+  .circle {
+  
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    width: 40px; /* Taille du cercle */
+    height: 40px;
+    border-radius: 50%; /* Rend le div un cercle */
+    background-color: rgb(246, 244, 244); /* Couleur de fond du cercle */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  
+  }
+  
+  .fullscreen-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .fullscreen-container img {
+    max-width: 90%;
+    max-height: 90%;
+  }
+  
+  .visible {
+    display: flex !important;
+  }
+  
+  .image-container {
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .visible {
+    display: flex !important;
+  }
+  
+  .fa-shopping-basket{
+  margin-left: 17px;
+  }
+  .circle i {
+    color: #000000; /* Couleur de l'icône */
+    font-size: 24px; /* Taille de l'icône */
+  }
+  .fa-search-plus:hover{
+    color: #ffffff;   
+  }
+  .fa-shopping-basket:hover{
+    color: #ffffff !important; 
+  }
+  .jaune:hover {
+    color: #ffffff !important; /* Couleur jaune au survol */
+  }  
+  .circle i {
+    transition: color 0.1s; /* Ajoute une transition pour un effet de lissage */
+  }
+  .circle:hover i {
+    color: #fff; /* Change la couleur de l'icône lorsque survolé */
+  }
+  .circle:hover{
+    background-color:#ab9d1e ;
+    color: #fff;
+  }

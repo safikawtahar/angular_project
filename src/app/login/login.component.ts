@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder,FormGroup,Validators } from '@angular/forms';
-import { DataService } from '../service/data.service';
-import { ToastrModule, ToastrService } from 'ngx-toastr';
-import {Router} from '@angular/router';
+import { AuthService } from '../auth.service';
+import { ActivatedRoute, Router } from '@angular/router';
+import { User } from '../models/user';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -10,48 +10,58 @@ import {Router} from '@angular/router';
 })
 export class LoginComponent implements OnInit {
 
- form!: FormGroup;
-submitted=false;
-data:any;
-token:any;
-constructor(private formBuilder:FormBuilder, private dataService:DataService,private toastr: ToastrService,private router:Router){}
-
-loginForm(){
-  this.form= this.formBuilder.group({
-    email:['', [Validators.required , Validators.email]],
-    password:['', [Validators.required ]],
-  
-})
-}
-ngOnInit(): void {
- this.loginForm(); 
-}
-get f(){
-  return this.form.controls ;
-}
-submit(){
-  this.submitted=true ;
-   if(this.form.invalid){
-  return ;
-}
-this.dataService.login(this.form.value).subscribe(res => {
-  this.data=res;
-    //console.log(res);
-    if(this.data.status===1){
-      this.token===this.data.data.token ;
-      localStorage.setItem('token',this.token);
-      this.router.navigate(['/']);
-      this.toastr.success(JSON.stringify(this.data.message), JSON.stringify(this.data.code),{
-        timeOut:2000,
-        progressBar:true
-       });
-     }else if(this.data.status===0){
-     this.toastr.error(JSON.stringify(this.data.message), JSON.stringify(this.data.code),{
-       timeOut:2000,
-       progressBar:true
-     });
+  User: User = {
+    name: '',
+    email: '',
+    password: '',
+    num_tel: '',
+    Adresse: ''
+  }
+  loginForm = true;
+  data: any;
+  isadmin: boolean = false;
+  messageError: any;
+  static login_name: string
+  status!: any;
+  constructor(public authService: AuthService, private router: Router, private route: ActivatedRoute) { }
+  ngOnInit(): void {
+  }
+  login() {
+    this.authService.login(this.User).subscribe((reponse: any) => {
+      this.authService.loggedIn = true;
+      this.data = reponse;
+      
+      // Vérifiez si l'objet data est défini avant d'accéder à sa propriété id
+      if (this.data?.user?.id) { 
+        this.authService.user_id = this.data.user.id;
+      }
+      
+      if (this.data.status == 1)
+        this.authService.name = this.data.user.name;
+      this.reset();
+      
+      this.status = this.data.status;
+      this.authService.status = this.status;
+      if (this.data.status == 1)
+        this.User = this.data.user;
+      if (this.User.email == "admin@gmail.com")
+        this.router.navigate(['/dashboard']);
+      else if (this.data.status == 1) {
+        this.router.navigate(['/content']);
+      }
+    }, error => {
+      console.error('Error during login:', error);
+      // Gérer l'erreur ici, par exemple afficher un message d'erreur à l'utilisateur
+    });
+  }
+  reset() {
+    this.User = {
+      name: '',
+      email: '',
+      password: '',
+      num_tel: '',
+      Adresse: ''
     }
-  
-});
-}
-}
+  }
+ }
+

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste</title>
+</head>
+<body>
+  <app-header></app-header>
+        
+  <div class="content">
+    <H2 style="font-weight: bolder; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 24px;">Product Categories</H2>
+    <hr width="325px" style="margin-left: -1px;">
+    <div id="list-example" class="list-group">
+      <!-- Utilisez *ngFor pour itérer sur les catégories -->
+      <a *ngFor="let categorie of categories" class="list-group-item list-group-item-action" (click)="navigateToCategory(categorie.nomCategorie)">
+        <!-- Utilisez FontAwesome pour l'icône du chevron -->
+        <i class="fas fa-chevron-right"></i>
+        <!-- Affichez le nom de la catégorie -->
+        <span style="margin-left: 10px;">{{ categorie.nomCategorie }}</span>
+      </a>
+      <div style="height: 5px;"></div>
+    </div>
+  </div>
+</body>
+</html>

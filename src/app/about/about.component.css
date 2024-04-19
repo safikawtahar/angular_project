@@ -1,0 +1,234 @@
+.image-about{
+    height: auto;
+        width: 100%;
+    }
+    
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+    
+    body, html {
+        margin: 0;
+        padding: 0;
+      }
+    
+    .usine{
+        width: 35%;
+        height: auto;
+        margin-top: -500px;
+        margin-left: 150px;
+    }
+    .separator{
+        margin-top: 430px;
+    }
+    
+    .sel{
+        display: flex;
+        align-items: center; /* Centre verticalement les enfants */
+        justify-content: center; /* Centre horizontalement les enfants */
+        text-align: center; /* Centre le texte horizontalement */
+    }
+    
+    .bloc1 {
+        display: inline;
+        align-items: center; /* Aligner les éléments verticalement */
+    }
+    
+    .image-container {
+        margin-right: 50px; /* Espace entre l'image et le texte */
+        width:1200px;
+       
+    }
+    .titre{
+        font-weight: 800;
+        font-size: 32px;
+       
+    }
+    .text-container {
+        flex-grow: 1; /* Permettre au conteneur de texte de prendre tout l'espace disponible */
+        margin-top: -900px;
+        width: 35%;
+        margin-left: 45%;
+        font-weight: 600;
+        
+    }
+    
+    .boutton{
+        color: #ffffff;
+        font-weight: 600;
+    }
+    
+    .text-container1 {
+        flex-grow: 1; /* Permettre au conteneur de texte de prendre tout l'espace disponible */
+        margin-top: -900px;
+        width: 35%;
+        margin-left: 45%;
+        font-weight: 400;
+        font-size: 15px;
+        
+        
+    }
+    
+    
+    
+    
+    
+    .yellow{
+        width: 100%;
+        height: 600px;
+        background-color: #998c17;
+    }
+    .separator1{
+        margin-top: 100px;
+    }
+    .discover1{
+        color: white;
+        align-items: center; /* Centre verticalement les enfants */
+        justify-content: center; /* Centre horizontalement les enfants */
+        text-align: center; /* Centre le texte horizontalement */
+        font-weight: 500;
+    
+    }
+    .div-selection1{
+        align-items: center; /* Centre verticalement les enfants */
+        justify-content: center; /* Centre horizontalement les enfants */
+        text-align: center; /* Centre le texte horizontalement */
+    background-color: white;
+    height: 50px;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 160px;
+    color: #c7b839;
+    }
+    .our-product1{
+        align-items: center; /* Centre verticalement les enfants */
+        justify-content: center; /* Centre horizontalement les enfants */
+        text-align: center; /* Centre le texte horizontalement */
+        color: white;
+        font-size: 35px;
+       font-weight: 900;
+       margin-right: 10px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    h5{ 
+        
+        font-weight: 700;
+        text-transform: inherit;
+        font-style: inherit;
+        text-decoration: inherit;
+    }
+    
+    .lign h2{
+        font-size: 18px;
+        color: #ffffff;
+        text-transform: capitalize;
+        margin-bottom: 35px;
+        font-weight: 500;
+        position: relative;
+    }
+    .lign h2 ::before{
+        content: '';
+        position: absolute;
+        left:0;
+        bottom: -10px;
+        background-color: white;
+        height: 2px;
+        box-sizing: border-box;
+        width: 50px;
+    }
+    
+    .lign{
+        display: flex;
+    }
+    .espace{
+        width: 40px;
+    }
+    .des{
+        width: 250px;
+        color: white;
+        font-size: 14px;
+        font-weight: 400;
+      margin-left: 60px;
+    }
+    .titlee{
+        color: white;
+        text-decoration: none;
+    }
+    .icon{
+        color: white;
+        margin-top: 13px;
+    }
+    .threediv{
+        display: flex;
+        align-items: center; /* Centre verticalement les enfants */
+        justify-content: center; /* Centre horizontalement les enfants */
+        text-align: center; /* Centre le texte horizontalement */
+        gap: 90px;
+        padding: 0;
+    }
+    
+    
+    .discover{
+        align-items: center; /* Centre verticalement les enfants */
+        justify-content: center; /* Centre horizontalement les enfants */
+        text-align: center; /* Centre le texte horizontalement */
+        color: #998c17;
+        font-weight: 500;
+    }
+    .sel{
+        display: flex;
+        align-items: center; /* Centre verticalement les enfants */
+        justify-content: center; /* Centre horizontalement les enfants */
+        text-align: center; /* Centre le texte horizontalement */
+    }
+    .our-product{
+        align-items: center; /* Centre verticalement les enfants */
+        justify-content: center; /* Centre horizontalement les enfants */
+        text-align: center; /* Centre le texte horizontalement */
+        color: black;
+        font-size: 35px;
+       font-weight: 900;
+       margin-right: 10px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    .div-selection{
+        align-items: center; /* Centre verticalement les enfants */
+        justify-content: center; /* Centre horizontalement les enfants */
+        text-align: center; /* Centre le texte horizontalement */
+    background-color: #998c17;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 160px;
+    color: white;
+    }
+    
+    .div-selectionx{
+        align-items: center; /* Centre verticalement les enfants */
+        justify-content: center; /* Centre horizontalement les enfants */
+        text-align: center; /* Centre le texte horizontalement */
+    background-color: #998c17;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 150px;
+    color: white;
+    }
+    
+    
+    
+    .gris{
+        align-items: center; /* Centre verticalement les enfants */
+        justify-content: center; /* Centre horizontalement les enfants */
+        text-align: center; /* Centre le texte horizontalement */
+        color: rgb(127, 122, 122);
+        width: 70%;
+        display: flex;
+        margin-left: 15%;
+    
+    }
+    .ligne{
+        width: 60px;
+        height: auto;
+        margin: 12px;
+        margin-top: -2px;
+    }

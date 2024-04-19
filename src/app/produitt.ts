@@ -1,7 +1,9 @@
 export class Produitt {
-    Nom_Produit:any;
-Prix_Produit : any;
-Description : any;
-Quantite_stocke: any ;
-Image_Produit : any
+ id?: number;
+Nom_Produit:any;
+Prix_Produit? : number;
+Description? : string;
+Quantite_stocke?: number ;
+Image_Produit ?: string;
+categorie_id?:number
 }

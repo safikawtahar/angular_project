@@ -1,0 +1,437 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap");
+.hhh{
+  width: 100%;
+  height: 200px;
+  background-color: rgb(250, 244, 244);
+  position: fixed;
+  top: 0%;
+  z-index: 100; /* Assure que la navbar est au premier plan */;
+}
+.logo {
+  margin-left: -25%; /* Ajustez la marge gauche comme nécessaire */
+  top: -35px;
+  position: relative;
+  
+}
+.header {
+    background-color: #000000; /* Couleur noire */
+    color: #fff; /* Couleur du texte */
+    padding: 10px; /* Espace intérieur */
+    margin: 0; /* Supprime tout espacement extérieur */
+    display: flex; /* Utilisation de flexbox pour aligner les éléments */
+    justify-content: space-between; /* Aligner les éléments à gauche et à droite */
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 25px;
+    left: 0;
+    z-index: 1000; /* Assurez-vous que z-index est élevé pour rester au-dessus du contenu de la page */
+}
+.connecter:hover{
+  text-decoration: none;
+}
+.div_black{
+ margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+}
+.social-icons {
+
+    margin-left: 200px;
+    margin-top: 20px;
+  
+}
+
+.social-icons img {
+  
+    margin-right: 15px; /* Marge entre les icônes */
+    width: 25px; /* Ajustez la largeur de l'icône comme nécessaire */
+    height: auto;
+}
+.icon_header {
+    width: 25px; /* Ajustez la largeur de l'icône comme nécessaire */
+    height: auto;
+    display: flex; 
+    margin: 0;
+    transition: bottom 0.3s ease;
+    transform: translateX(-50%);
+ 
+}
+
+.right{
+   
+    display: flex;
+    margin-left: 400px;
+
+}
+.contact-info {
+  display: block;
+  position: relative;
+  animation: moveUpDown 800ms infinite alternate; /* Animation de mouvement */
+}
+
+@keyframes moveUpDown {
+  0% {
+      transform: translateY(0); /* Déplacer vers le haut de 0px */
+  }
+  100% {
+      transform: translateY(-8px); /* Déplacer vers le haut de 10px */
+  }
+}
+.contact-info:hover {
+  animation-play-state: paused; /* Pause de l'animation au survol */
+}
+.info{
+    font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    line-height: 1;
+    font-style: italic;
+  font-size: medium;
+    
+}
+.contact-area h3 {
+    margin: 0; /* Réinitialise la marge pour la balise h3 */
+    text-decoration: none;
+}
+
+.contact-area p {
+    margin: 5px 0; /* Ajustez la marge comme nécessaire */
+    
+}
+.contact-area{
+    display: flex; 
+    margin-left: 90px;
+    margin: 0;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px; 
+    margin-right: 50px;
+  
+}
+.contact-area div {
+    margin-left: 15px; /* Ajustez la marge à gauche comme nécessaire */
+}
+.imgg{
+    margin-left: 190px;
+    margin-top: 65px;
+    text-decoration: none;
+   
+
+}
+.user{
+    height: 25px;
+    width: 25px;
+   
+    margin-right: 10px;
+    
+}
+.nav-container * {
+  display: initial !important;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center; /* Aligner les éléments verticalement au centre */
+  margin-left: 200px; /* Ajustez la marge à gauche comme nécessaire */
+  margin-top: 100px; /* Ajustez la marge supérieure selon vos besoins */
+  position: relative;
+}
+.nav-toolbar {
+  margin-top: -60px; /* Ajustez la valeur négative selon vos besoins */
+  margin-left: 220px;
+}
+
+
+.navv{
+margin-left: 200px;
+margin-top: -1140px;
+font-weight: 500;
+
+
+}
+.liv{
+    font-weight: 600;
+    color: #ab9d1e;
+    align-items: flex-start;
+    margin: 0; /* Supprime tout espacement extérieur */
+    padding: 0;
+    position: relative;
+    top: -13px; /* Ajustez la marge supérieure selon vos besoins */
+}
+  
+
+.fixed-header {
+
+  width: 100%;
+  z-index: 1000; /* Ajustez le z-index si nécessaire pour garantir que l'en-tête est au-dessus du contenu de la page */
+  margin: 0;
+margin-top: -15px;
+}
+.connecter{
+    color: #000;
+    margin: 0;
+
+  
+}
+.creer-compte{
+    color: #000;
+    margin: 0;
+    text-decoration: none;
+}
+.cnx{
+    display: flex;
+    margin-left: 600px;
+    align-items: flex-start;
+    position: relative;
+    top: -7px;
+}
+.barre1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: 80px; /* Ajustez la marge supérieure selon vos besoins */
+  position: static; /* Réinitialise le positionnement */
+  visibility: visible; /* Assure la visibilité */
+  margin: 0; /* Réinitialise les marges */
+  padding: 0; /* Réinitialise les rembourrages */
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.link {
+    margin: 0;
+    
+}
+  .sidenav-container {
+    height: 100%;
+   
+  }
+.mobile{
+  color: #fff;
+  text-decoration: none;
+}
+.mobile:hover{
+  color: #ab9d1e;
+}
+  
+  .mat-toolbar-row {
+    justify-content: space-between;
+    align-items: center; /* Aligner les éléments verticalement au centre */
+  }
+  
+  .mat-button {
+    color: white !important;
+    margin: 0 8px; /* Marge entre les boutons */
+  }
+  
+  /* Style du séparateur */
+  .separator {
+    height: 24px; /* Hauteur du séparateur (ajustez selon vos besoins) */
+    border-right: 1px solid white; /* Bordure droite pour créer le séparateur */
+    margin: 0 8px; /* Marge de chaque côté du séparateur */
+   
+  }
+  
+  .spacer {
+    flex: 1;
+
+  }
+  
+  /* Style du menu latéral */
+  .mat-sidenav {
+    width: 250px; /* Largeur du menu latéral */
+    background-color: #ab9d1e; /* Couleur de fond du menu latéral */
+ /* Couleur du texte du menu latéral */
+  }
+  
+  .mat-sidenav-content {
+    padding: 20px; /* Espacement du contenu principal à côté du menu latéral */
+  }
+  .sep{
+    height: 20px;
+    width: auto;
+    margin-right: 10px;
+  }
+  .av-column-2 my-auto{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  a {
+    color: black; /* Couleur du texte par défaut */
+    text-decoration: none; /* Supprimer la soulignement par défaut */
+    margin-right: 10px; /* Espacement à droite entre les liens */
+    font-size: medium; /* Taille de la police par défaut */
+   }
+
+.jaune {
+    cursor: pointer; 
+    color: #998c17 !important; /* Couleur jaune */
+}
+
+.jaune:hover {
+    color: #998c17 !important; /* Couleur jaune au survol */
+}
+
+  .home{
+    color: #454444;
+    margin-right: 10px;
+    font-size: medium;
+    text-decoration: none;
+    cursor: pointer; 
+    text-decoration: none;
+  }
+  .home1{
+    cursor: pointer; 
+    color: #998c17;
+  }
+  .home:hover{
+    color: #998c17; /* Couleur jaune au survol */
+  }
+  .art1{
+    cursor: pointer; 
+    color: #998c17;
+  }
+  .home:hover{
+    color: #998c17;
+  }
+  .about{
+    color: #454444;
+    margin-right: 10px;
+    font-size: medium;
+    text-decoration: none;
+    cursor: pointer; 
+    text-decoration: none;
+  }
+  .about1{
+    cursor: pointer; 
+    color: #998c17;
+  }
+  .about:hover{
+    color: #998c17;
+  }
+  .art{
+    color: #454444;
+    margin-right: 10px;
+    font-size: medium;
+    text-decoration: none;
+    cursor: pointer; 
+  }
+  .art1{
+    cursor: pointer; 
+    color: #998c17;
+  }
+  .art:hover{
+    color: #998c17;
+  }
+  .design{
+    color: #998c17;
+    margin-right: 10px;
+    font-size: medium;
+    text-decoration: none;
+    cursor: pointer; 
+    
+  }
+  .design1{
+    cursor: pointer; 
+    color: #998c17;
+  }
+  .design:hover{
+    color:#998c17;
+  }
+  .contact{
+    color: #454444;
+    margin-right: 50px;
+    font-size: medium;
+    text-decoration: none;
+    cursor: pointer; 
+  }
+  .contact1{
+    cursor: pointer; 
+    color: #998c17;
+  }
+  .contact:hover{
+    color: #998c17;
+  }
+  .fa-shopping-basket:hover{
+    color: #998c17; 
+  }
+  .research{
+    margin-bottom: 1px;
+    margin-right: 10px;
+    width: 20px;
+    height: auto;
+  }
+  .ligne{
+    margin-bottom: 1px;
+    
+    width: 20px;
+    height: auto;
+  }
+  .get-button{
+    color: #fff;
+    text-decoration: none;
+  }
+
+.sidenav-container {
+  height: 100%; /* Assurez-vous d'avoir une hauteur appropriée, par exemple 100vh pour occuper la hauteur de la fenêtre */
+}
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+/* Supprimez également la marge de la balise h1 si nécessaire */
+h1 {
+  margin: 0;
+}
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; /* ou align-items: flex-start; selon votre préférence */
+}
+.custom-header-bg {
+
+ /* Remplacez #yourColor par la couleur de fond souhaitée */
+  height: 200px;
+  transition: background-color 0.3s ease;
+}
+
+.im1{
+  display: block;
+  width: 100%;
+  margin: 0; /* Supprime tout espacement extérieur */
+  padding: 0; /* Supprime tout espacement intérieur */
+
+
+}
+
+.sepp{
+  width: 10px;
+}
+.numero{
+  color: black;
+  margin-left: -22px;
+  position: fixed;
+  top: 147px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.order{
+  background-color: #998c17;
+
+  border-color: #998c17;
+  width: 150px;
+  height: 40px;
+
+}
+.or{
+  text-decoration: none;
+  color: #fff;
+}

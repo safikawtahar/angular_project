@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en" data-bs-theme="auto">
   <head><script src="/docs/5.3/assets/js/color-modes.js"></script>
@@ -9,35 +10,36 @@
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/sign-in/">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
 
-<link href="/docs/5.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
-
-    <!-- Custom styles for this template -->
-    <link href="register.component.css" rel="stylesheet">
   </head>
-  <body class="d-flex align-items-center py-4 bg-body-tertiary">
+  
+  <body>
+    <app-header></app-header>
+<div style="margin-top: -32%;">
+    <main >
+        <form (ngSubmit)="submit()" [formGroup]="form">
+  
+          <h2 class="client-enregistres">
+              Informations personnelles
+          </h2>
+      <hr width="40%" style="margin-left: 0%; color: black;">
 
-    <main class="form-signin w-100 m-auto">
-      <form (ngSubmit)="submit()" [formGroup]="form">
-        <img class="mb-4" src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
-        <h1 class="h3 mb-3 fw-normal">Register now</h1>
-    
         <div class="form-floating">
-          <input type="text" class="form-control" id="floatingInput" placeholder="" name="nom_client" 
-          formControlName="nom_client"  [ngClass]="{'is-invalid' : submitted && f['nom_client'].errors}">
-          <label for="floatingInput">Nom </label>
+          <label for="floatingInput" style="font-weight: 700;font-size: 17px;">Nom </label><br>
+          <input type="text" class="form-control" style="width: 600px;height: 40px;border-color: black;" id="floatingInput" placeholder="" name="name" 
+          formControlName="name"  [ngClass]="{'is-invalid' : submitted && f['name'].errors}">
 
-          <div *ngIf="submitted && f['nom_client'].errors" class="invalid-feedback">    
-            <div *ngIf="submitted && f['nom_client'].errors['required']" >
+          <div *ngIf="submitted && f['name'].errors" class="invalid-feedback">    
+            <div *ngIf="submitted && f['name'].errors['required']" >
               Name is required
             </div>
           </div>
         </div>
         
         <div class="form-floating">
-          <input type="email" class="form-control" id="floatingInput" placeholder="" name="email" formControlName="email"
+          <label for="floatingInput" style="font-weight: 700;font-size: 17px;">Email </label><br>
+          <input type="email" class="form-control" style="width: 600px;height: 40px;border-color: black;" id="floatingInput" placeholder="" name="email" formControlName="email"
             [ngClass]="{'is-invalid' : submitted && f['email'].errors}" >
-          <label for="floatingInput">Email</label>
 
           <div *ngIf="submitted && f['email'].errors" class="invalid-feedback">    
             <div *ngIf="submitted && f['email'].errors['required']" >
@@ -50,14 +52,20 @@
         </div>
     
         <div class="form-floating">
-          <input type="text" class="form-control" id="floatingInput" placeholder="" name="num_tel">
-          <label for="floatingInput">Numero telephone </label>
+          <label for="floatingInput" style="font-weight: 700;font-size: 17px;">Numero telephone  </label><br>
+          <input type="text" class="form-control" id="floatingInput" style="width: 600px;height: 40px;border-color: black;" placeholder="" name="num_tel">
         </div>
-          
+
         <div class="form-floating">
-          <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="password" 
+          <label for="floatingInput" style="font-weight: 700;font-size: 17px;">Adresse </label><br>
+          <input type="text" class="form-control" style="width: 600px;height: 40px;border-color: black;" id="floatingInput" placeholder="" name="adresse">
+        </div>
+
+        <div class="form-floating">
+          <label for="floatingInput" style="font-weight: 700;font-size: 17px;">Password </label><br>
+          <input type="password" class="form-control" style="width: 600px;height: 40px;border-color: black;" placeholder="" name="num_tel" id="floatingPassword" placeholder="Password" name="password" 
             formControlName="password" [ngClass]="{'is-invalid' : submitted && f['password'].errors}">
-          <label for="floatingPassword">Password</label>
+
           <div *ngIf="submitted && f['password'].errors" class="invalid-feedback">    
             <div *ngIf="submitted && f['password'].errors['required']" >
               Password is required
@@ -69,9 +77,9 @@
         </div>
     
         <div class="form-floating">
-          <input type="password" class="form-control" id="floatingPassword1" placeholder="Password" 
+          <label for="floatingInput" style="font-weight: 700;font-size: 17px;">confirm Password</label><br>
+          <input type="password" class="form-control" id="floatingPassword1" style="width: 600px;height: 40px;border-color: black;" placeholder="Password" 
             formControlName="confirmPassword" [ngClass]="{'is-invalid' : submitted && f['confirmPassword'].errors}">
-          <label for="floatingPassword">confirm Password</label>
 
           <div *ngIf="submitted && f['confirmPassword'].errors" class="invalid-feedback">    
             <div *ngIf="submitted && f['confirmPassword'].errors['required']" >
@@ -82,9 +90,18 @@
           </div>
         </div>
       </div>
-
-        <button class="btn btn-primary w-100 py-2" type="submit">Register</button>
+      <br>
+      <button class="boutton" type="submit"><a href="/home" style="color: white;text-decoration: none;">Register
+      </a></button><br><br><br>
+  
+    <br>
+      <app-footer></app-footer>
       </form>
     </main>
-  </body>
-</html>
+  </div>
+      
+    </body>
+  
+  </html>
+  
+

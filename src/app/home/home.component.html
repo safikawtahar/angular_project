@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <!--Get your own code at fontawesome.com-->
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <!--Get your own code at fontawesome.com-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;800&family=Changa:wght@200;400;500&family=Gentium+Plus:wght@400;700&family=Open+Sans:ital,wght@0,300;0,600;0,800;1,300;1,400;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,400;0,600;0,800;1,400;1,600;1,800;1,900&family=Qwitcher+Grypen:wght@400;700&family=Raleway:ital,wght@0,200;0,800;1,800&family=Roboto:wght@100;300;500;900&display=swap">
+
+
+
+</head>
+<body>
+    <app-header></app-header>
+    <router-outlet>
+
+    </router-outlet>
+    <script
+  type="module"
+  src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+></script>
+<script
+  nomodule
+  src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+></script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+
+<div class="image-container">
+    <img [src]="imageUrl" alt="Image" class="image">
+    <div class="text-container">
+      <p class="olv2">{{ currentImageTexts[0] }}</p><br><br>
+      <p class="olv3">{{ currentImageTexts[1] }}</p><br><br>
+      <i class='fas fa-arrow-circle-left' style='font-size:24px;color: white;' (click)="prevImage()"></i>
+      <i class='fas fa-arrow-circle-right' style='font-size:24px;color: white;' (click)="nextImage()"></i>
+    </div>
+  </div>
+
+
+<div class="barre">
+<h3 class="discover">Discover olive wood items</h3>
+<div class="sel">
+    <img src="assets/img/moins-la-ligne-droite-horizontale.png" alt="" class="ligne">
+    <p class="our-product">Our product  </p>
+    <div class="div-selection">
+        <p >Selection</p>
+    </div>
+</div>
+
+<p class="gris">Oliva wood produce personalized, unique and high quality products.</p>
+</div>
+
+<div class="ligne1">
+    <div>
+<img src="assets/img/socciete/p23.png" alt="image" class="imag">
+    </div>
+    <div>
+        <img src="assets/img/socciete/p41.png" alt="image" class="imag">
+    </div>
+    <div>
+        <img src="assets/img/socciete/p9.png" alt="image" class="imag">
+    </div>
+    <div>
+        <img src="assets/img/socciete/p30.png" alt="image" class="imag">
+    </div>
+</div>
+
+<div class="ligne2">
+    <div>
+        <img src="assets/img/socciete/p21.png" alt="image" class="imag">
+    </div>
+    <div>
+        <img src="assets/img/h3-removebg-preview.png" alt="image" class="imag1">
+    </div>
+    <div>
+        <img src="assets/img/socciete/p31.png" alt="image" class="imag">
+    </div>
+    <div>
+        <img src="assets/img/socciete/40.png" alt="image" class="imag">
+    </div>
+</div>
+<br>
+<div class="yellow">
+<br><br><br><br><br>
+<p  class="discover1">We are using more than 7600 M2 for production</p>
+<div class="sel">
+
+    <h3 class="our-product1">About  </h3>
+    <div class="div-selection1">
+        <p >Olivawood</p>
+    </div>
+</div>
+<p class="discover1">OLIVAWOOD  is a Factory using olive wood to produce items for kitchen & table, furniture, decor and gift items. </p>
+<p class="discover1">we are based is Sousse city in the center of Tunisia, where the olive trees are abundent. We are using more  </p>
+<p class="discover1">than 7600 M2 for production.</p>
+
+
+<br><br>
+<div class="threediv">
+    <div>
+        <div>
+            <div class="lign">
+                <a href="#" class="icon"><i class='fas fa-chart-bar' style='font-size:29px'></i> </a>
+                <div class="espace"></div>
+            <h2>
+                <a href="#" class="titlee">Business Growth</a>
+                
+            </h2>
+            </div>
+            <h5 class="des">Our factory is the biggest and the top developed factory of olive wood produce in all Tunisia.</h5>
+        </div>
+        
+    </div>
+
+    <div>
+        <div>
+            <div class="lign">
+                <a href="#" class="icon">
+                    <i class='fab fa-connectdevelop' style='font-size:29px'></i></a>
+                <div class="espace"></div>
+                <h2>
+                    <a href="#" class="titlee">Business Sustainability</a>
+                 </h2>
+            </div>
+            <h5 class="des">We are in treatment and supply of olive wood since 1988.</h5>
+        </div>
+        
+    </div>
+
+    <div>
+        <div>
+            <div class="lign">
+                <a href="#" class="icon"><i class='fas fa-tachometer-alt' style='font-size:29px'></i> </a>
+                <div class="espace"></div>
+            <h2>
+                <a href="#" class="titlee">Business Performance</a>
+            </h2>
+            </div>
+            <h5 class="des">We do use Band saw Mill, the top high technology of wood cutting – Made in USA</h5>
+        </div>    
+    </div>
+    
+</div>
+
+
+
+
+</div>
+
+<br><br><br>
+<div class="barre">
+<h3 class="discover">Oliva Wood Factory </h3>
+<div class="sel">
+    <img src="assets/img/moins-la-ligne-droite-horizontale.png" alt="" class="ligne">
+    <p class="our-product">Our product  </p>
+    <div class="div-selectionx">
+        <p >Categories</p>
+    </div>
+</div>
+
+<p class="gris">OLIVAWOOD is a Factory using Olive Wood to produce items for kitchen & table, furniture, decor and gift items. </p>
+</div>
+<div class="derniere-barre">
+    <div class="content-white">
+        <img src="assets\img\cadre.png" alt="cadre">
+        <h5 class="service-title titre"><a href="/art" class="art">The art of kitchen</a></h5>
+        <p class="desc">A wide selection of products dedicated to the kitchen for a better presentation of dishes.</p>
+        <a href="javascript:void(0);" class="fleche"><i class="fa fa-long-arrow-right"></i></a>
+    </div>
+    
+    <div class="content-white">
+        <img src="assets\img\cadre.png" alt="cadre">
+        <h5 class="service-title titre1"><a href="/art" class="art">Design & Deco</a></h5>
+        <p class="desc">100% olive wood decorative and practical items. Discover our selection.</p>
+        <a href="javascript:void(0);" class="fleche"><i class="fa fa-long-arrow-right" ></i></a>
+    </div>
+    
+    <div class="content-white">
+        <img src="assets\img\cadre.png" alt="cadre">
+        <h5 class="service-title titre2"><a href="/art" class="art">
+        Bathroom wood soap dish
+        </a></h5>
+        <p class="desc">Check out our wooden soap dish selection. Unique an refined pieces to satisfy our customers.</p>
+        <a href="javascript:void(0);" class="fleche"><i class="fa fa-long-arrow-right"></i></a>
+    </div>    
+</div>
+
+<div class="separator1"></div>
+<br><br><br><br><br><br><br><br><br>
+<div class="barre">
+    <h3 class="discover">Our experience and know- how are source of our success </h3>
+    <div class="sel">
+        <img src="assets/img/moins-la-ligne-droite-horizontale.png" alt="" class="ligne">
+        <p class="our-product">The  </p>
+        <div class="div-selection">
+            <p >Factory</p>
+        </div>
+    </div>
+    
+    <p class="gris">100% OF OLIVE WOOD LOGS WE ARE USING IN OUR PRODUCTUION ARE FROM TREES THAT ARE NO MORE PRODUCTIF. </p>
+    </div>
+    <div class="ligne2">
+        
+        
+        
+        <div>
+            <img src="assets\img\nov-img\p3-c.jpg" alt="image" class="imag">
+        </div>
+        <div>
+            <img src="assets\img\l2.jpg" alt="image" class="imag">
+        </div>
+        <div>
+            <img src="assets\img\nov-img\p2.jpg" alt="image" class="imag">
+        </div>
+        <div>
+            <img src="assets\img\l1.jpg" alt="image" class="imag">
+        </div>
+    </div>
+
+<br><br>
+
+<app-footer>
+    
+</app-footer>
+
+
+
+</body>
+</html>

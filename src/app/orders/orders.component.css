@@ -1,0 +1,22 @@
+.HOVER:hover {
+    transform: scale(1.03);
+    transition: all linear 200ms;
+    z-index: 1;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .3);
+    cursor: pointer;
+  }
+
+  .dashboard-and-content {
+    display: flex;
+}
+
+.dashboard {
+    width: 280px; /* Largeur de votre dashboard */
+    padding: 20px;
+    background-color: #e3e1b4;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+    flex-grow: 1;
+}

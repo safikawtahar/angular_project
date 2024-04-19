@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitchen Accessories</title>
+</head>
+<body>
+  <app-header></app-header>
+<span class="page">
+
+<app-liste>
+
+</app-liste>
+  
+    <br><br><br>
+    <div class="contenue">
+     <div class="images">
+       <div *ngFor="let imageUrl of imagesUrls" class="ligne1">
+         <div  class="cadre">
+           <img [src]="imageUrl" alt="Image"  class="imag">
+           <div class="circle" style="margin-top: -240px;">
+             <i class='fas fa-shopping-basket' style='font-size:20px; margin-right: 20px;' [ngClass]="{ 'jaune': isPanierClicked }"  (click)="toggleColor('panier')" (click)="addToCart()"></i>
+           </div>
+           <div style="margin-top: 5px;"></div>
+           <div class="circle" (click)="toggleFullscreen(imageUrl)">
+             <i class='fas fa-search-plus'></i>
+           </div>
+             
+           <div class="fullscreen-container" [ngClass]="{'visible': isFullscreen && currentImageUrl === imageUrl}">
+             <img [src]="imageUrl" alt="Image">
+           </div><br><br>
+           <hr class="ligne" style="margin-top: 100px;">
+           <div class="desc">
+               <h2>Set of 6 round bowls</h2>
+               <h3>SIZE: 6 to 16 cm</h3>
+               <h4>REF: BS1</h4>
+           </div>
+          </div>
+       </div>
+      </div>
+    </div>
+    
+    <br><br><br><br><br>
+    
+    
+        
+    
+
+
+<app-footer>
+
+</app-footer>
+
+
+

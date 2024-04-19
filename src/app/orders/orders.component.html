@@ -1,0 +1,40 @@
+
+<div class="dashboard-and-content">
+    <div class="dashboard">
+    <app-home-dash></app-home-dash>
+    </div>
+    <div class="content">
+<div class="container">
+    <div class="my-3">
+        <h2>List of Orders</h2>
+    </div>
+
+    <!-- List -->
+    <div class="my-5 row">
+        <div class="col-md-12">
+            <div class="card border-0 shadow-sm" style="border-radius: 10px;">
+                <div class="card-body">
+                    <table class="table table-borderless">
+                        <thead>
+                            <tr>
+                                <th scope="col">Prix of products</th>
+                                <th scope="col"> Quantity of Products</th>
+                                <th scope="col">id user</th>
+
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr *ngFor="let panier of paniers">
+                                <td>{{ panier.prixItems }}</td>
+                                <td>{{ panier.qteItems }}</td>
+                                <td>{{ panier.user_id }}</td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

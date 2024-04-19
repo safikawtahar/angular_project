@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder,FormGroup,Validators } from '@angular/forms';
 import { MustMatch } from '../Confirm.validator';
-import { DataService } from '../service/data.service';
+import { AuthService } from '../auth.service';
 import { ToastrModule, ToastrService } from 'ngx-toastr';
 
 @Component({
@@ -14,11 +14,11 @@ export class RegisterComponent implements OnInit {
   form!: FormGroup;
   submitted=false;
   data:any;
-constructor(private formBuilder:FormBuilder, private dataService:DataService,private toastr: ToastrService){}
+constructor(private formBuilder:FormBuilder, private dataService:AuthService,private toastr: ToastrService){}
 
 createForm(){
   this.form= this.formBuilder.group({
-    nom_client:[null, Validators.required],
+    name:[null, Validators.required],
     email:['', [Validators.required , Validators.email]],
     password:['', [Validators.required , Validators.minLength(6)]],
     confirmPassword:[null, Validators.required]
@@ -38,7 +38,7 @@ submit(){
     return ;
   }
 
-this.dataService.registerClient(this.form.value).subscribe(res => {
+this.dataService.register(this.form.value).subscribe(res => {
 this.data=res;
 //console.log(res);
 if(this.data.status===1){
@@ -53,9 +53,11 @@ this.toastr.error(JSON.stringify(this.data.message), JSON.stringify(this.data.co
 });
   }
 this.submitted=false ;
-this.form.get('nom_client')?.reset();
+this.form.get('name')?.reset();
 this.form.get('email')?.reset();
 this.form.get('num_tel')?.reset();
+this.form.get('Adresse')?.reset();
+
 this.form.get('password')?.reset();
 this.form.get('confirmPassword')?.reset();
 
